@@ -2,9 +2,9 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="PhrasesActivity">#D81B60</color>
-    <color name="NumbersActivity">#D81B60</color>
-    <color name="FamilyActivity">#D81B60</color>
-    <color name="ColorsActivity">#D81B60</color>
+    <color name="colorAccent">#00574B</color>
+    <color name="PhrasesActivity">#00574B</color>
+    <color name="NumbersActivity">#00574B</color>
+    <color name="FamilyActivity">#00574B</color>
+    <color name="ColorsActivity">#00574B</color>
 </resources>
