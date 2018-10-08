@@ -15,6 +15,8 @@
  */
 package com.example.application;
 
+import android.content.Context;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,10 +24,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import java.net.ContentHandler;
 import java.util.ArrayList;
 
 public class FamilyActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer;
+    private AudioManager maudioManager;
     MediaPlayer.OnCompletionListener monCompletionListener=new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
@@ -36,7 +40,7 @@ public class FamilyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
-
+        maudioManager= (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         // Create a list of Words
         final ArrayList<Word> Words = new ArrayList<Word>();
         Words.add(new Word("father", "әpә", R.drawable.family_father,R.raw.family_father));
